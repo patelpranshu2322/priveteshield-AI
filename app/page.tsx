@@ -1,19 +1,25 @@
+import Navbar from "@/components/layout/Navbar";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#050816]">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold text-cyan-400">
-          PrivateShield AI
-        </h1>
+    <>
+      <Navbar />
 
-        <p className="mt-6 text-xl text-gray-300">
-          Your Offline Cybersecurity Copilot
-        </p>
+      <main className="flex min-h-screen items-center justify-center bg-[#050816]">
+        <div className="text-center">
+          <h1 className="text-6xl font-bold text-cyan-400">
+            PrivateShield AI
+          </h1>
 
-        <button className="mt-10 rounded-xl bg-cyan-500 px-8 py-4 text-lg font-semibold hover:bg-cyan-400">
-          Get Started
-        </button>
-      </div>
-    </main>
+          <p className="mt-6 text-xl text-gray-300">
+            Your Offline Cybersecurity Copilot
+          </p>
+
+          <button className="mt-10 rounded-xl bg-cyan-500 px-8 py-4 text-lg font-semibold text-black hover:bg-cyan-400">
+            Get Started
+          </button>
+        </div>
+      </main>
+    </>
   );
 }
